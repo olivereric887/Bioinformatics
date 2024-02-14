@@ -1,0 +1,11 @@
+1) makeblastdb -in mystery_transcripts.fasta -dbtype nucl -out mystery_transcripts_db
+2) makeblastdb -in mystery_proteins.fasta -dbtype prot -out mystery_proteins_db
+3) blastn -query mystery_nucleotide_query.fasta -db mystery_transcripts_db -evalue 1e-3 -max_target_seqs 5 -outfmt '7 qseqid sseqid pident length mismatch gapopen qstart qend sstart send evalue bitscore' -out nucleotide_search_results.tab
+4) T010027234997, T010003453160, T010027234995
+5) awk '$3 > 90 {print $2}' nucleotide_search_results.tab > most_similar.txt
+6) blastp -query mystery_protein_query.fasta -db mystery_proteins_db -evalue 1e-5 -max_target_seqs 15 -outfmt '7 qseqid sseqid pident length mismatch gapopen qstart qend sstart send evalue bitscore' -out protein_search_results.tab
+7)P010027090796,P010027090798,P010027073865, P010027077695
+8) Coffea arabica
+9) Gardenia jasminoides
+10) putative catalase mRNA
+
