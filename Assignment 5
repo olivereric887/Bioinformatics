@@ -1,3 +1,4 @@
-3) raxmlHPC-HYBRID-AVX -T 4 -n result -s infile.txt -c 25 -p 12345 -m PROTCATDAYHOFF -f a -N 100 -x 12345 --asc-corr lewis 
+3 a. muscle -in bats_ace2.fasta -out bats_ace2_aligned.fasta
+3 b. raxmlHPC-HYBRID-AVX -T 4 -n result -s infile.txt -c 25 -p 12345 -m PROTCATDAYHOFF -f a -N 100 -x 12345 --asc-corr lewis 
 4) Dobsonia_viridis_ace2, Empomophorus_wahlbergi_ace2, Rousettus_leschenaultii_ace2, cynopterus_sphinx_ace2, syconycteris_australis_ace2 
 5)covid aka trying to see the differences in species and covid 
