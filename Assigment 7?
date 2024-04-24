@@ -1,3 +1,0 @@
-conda actiavte genrich 
-cd Desktop/
-Genrich -t N_whitei_ATAC-Seq_chr1_D3.bam -o N_whitei_ATAC-Seq_chr1_D3.narrowPeak -r -j -v -y
